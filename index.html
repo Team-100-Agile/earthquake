@@ -9,9 +9,35 @@
   </head>
   <body>
 
-    <form action="http://localhost:3000/user/games/">
-      <button style="margin: 2%" type="submit">Return To Game Page</button>
-   </form>
+    <div class="nav-bar">
+      <nav>
+        <h2 class="logo">  <a href="http://localhost:3000/user/home"><img src="TemplateData/LOGO.jpg" alt="Travel Website Logo"></a>  </h2>
+          <ul>
+              <li><a href="http://localhost:3000/user/home">Home</a></li>
+              <li class="dropdown">
+                <a>Country</a>
+                <ul class="dropdown-menu">
+                    <li><a href="http://localhost:3000/user/country/usa">USA</a></li>
+                    <li><a href="http://localhost:3000/user/country/mexico">Mexico</a></li>
+                    <li><a href="http://localhost:3000/user/country/france">France</a></li>
+                    <li><a href="http://localhost:3000/user/country/italy">Italy</a></li>
+                    <li><a href="http://localhost:3000/user/country/china">China</a></li>
+                    <li><a href="http://localhost:3000/user/country/germany">Germany</a></li>
+                    <li><a href="http://localhost:3000/user/country/spain">Spain</a></li>
+                    <li><a href="http://localhost:3000/user/country/turkey">Turkey</a></li>
+                    <li><a href="http://localhost:3000/user/country/thailand">Thailand</a></li>
+                    <li><a href="http://localhost:3000/user/country/UK">UK</a></li>
+                </ul>
+            </li>
+            <li><a href="http://localhost:3000/user/home2">Stories</a></li>
+              <li><a href="http://localhost:3000/user/games/">Games</a></li>
+              <li><a href="http://localhost:3000/user/about">About Us</a></li>
+              <li><a href="http://localhost:3000/user/faq">FAQ</a></li>
+              
+          </ul>
+  
+      </nav>
+  </div>
 
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=1280 height=600></canvas>

@@ -14,3 +14,237 @@ body { padding: 0; margin: 0 }
 #unity-build-title { float: right; margin-right: 10px; line-height: 38px; font-family: arial; font-size: 18px }
 #unity-fullscreen-button { float: right; width: 38px; height: 38px; background: url('fullscreen-button.png') no-repeat center }
 #unity-mobile-warning { position: absolute; left: 50%; top: 5%; transform: translate(-50%); background: white; padding: 10px; display: none }
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0; /* Reset padding to 0 */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+  
+  .content {
+    max-width: 800px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  
+  .section {
+    text-align: left; /* Align section content to the left */
+    margin-top: 40px;
+  }
+  
+  h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .anchors ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .anchors li {
+    margin-bottom: 5px;
+  }
+  
+  .section {
+    margin-top: 40px;
+  }
+  
+  h3 {
+    font-size: 24px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+
+  }
+  
+  a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .full-width-image {
+    width: 100%; /* Set the width to 100% to span the screen */
+    height: auto; /* Maintain the aspect ratio */
+    max-height: calc(100vh - 100px); /* Set a maximum height to keep it within the viewport */
+  }
+  
+  .smaller-image {
+    width: 300px; /* Adjust the width as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    
+  }
+  
+  .full-content {
+    display: none; /* Initially hide the full content */
+  }
+  
+  .read-more {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .read-more:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  
+  nav{
+      position:sticky;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      padding-right: 10%;
+      z-index: 999;
+      background-color: rgb(255, 252, 228);
+
+  }
+  
+  .logo{
+      color: black;
+      font-size: 28px;
+      justify-content:center;
+  }
+  
+  nav ul li{
+      list-style-type: none;
+      display: inline-block;
+      padding: 11px 20px;
+  }
+  
+  nav ul li a{
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+  }
+  nav ul li a:hover{
+      color: #ea1538;
+      transition: .3s;
+  }
+  nav ul li a.clicked {
+      color: #ea1538;
+  }
+  
+  .dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: auto;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    padding: 5px 0;
+}
+
+.dropdown-menu a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    display: block; 
+}
+
+.dropdown-menu a:hover {
+    color: #ea1538;
+}
+
+.highlight {
+  background-color: yellow;
+}
+
+.faq-container {
+  text-align: center;
+}
+
+
+.subtitle{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shortInfo{
+  display: flex;
+  flex-direction: column;
+  
+  margin-left: 50px;
+  margin-right: 50px; 
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+
+.shortInfo .imgInfo{
+  width: 40%;
+  height: auto;
+  align-items: center;
+  padding: 10px;
+
+}
+
+.imgInfo img{
+  border-radius: 10px;
+}
+.cont1, .cont3{
+  display: flex;
+  justify-content:space-evenly;
+} 
+.cont1 .para1, .cont3 .para3{
+  width: 50%;
+  
+} 
+.cont2{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content:space-evenly;
+}
+
+.cont2 .para2{
+  width:50%
+}
+
+.tutorial{
+  display: flex;
+  justify-content: center;
+}
+
+#canvas-container {
+margin-left: 14%;
+}
